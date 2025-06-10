@@ -1,97 +1,75 @@
-html, body {
-    height: 100%;
-}
-
 body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
-}
-
-p {
-    font-size: 16px;
-}
-
-a {
-    color: #2e72a1;
-}
-
-#logo, .project-img {
-    max-height: 300px;
-}
-
-#fork img{
-    height: 25px;
-    margin-bottom: 25px;
-    filter: invert(1);
-}
-
-#sep {
-    height: 75px;
-}
-
-.margin {
-    margin-bottom: 45px;
-}
-
-.bg-1 {
-    background-color: #ffffff; /* White */
-    color: #555555;
-}
-
-.bg-2 {
-    background-color: #2e72a1; /* Blue */
-    color: #ffffff;
-}
-
-.card {
-    color: black;
-    text-align: left;
-}
-
-.card-title {
-    font-weight: 700;
-}
-
-.bg-3 {
-    background-color: #000000; /* Black */
-    color: #ffffff;
-}
-
-.bg-4 {
-    background-color: #343a40; /* Dark Gray */
-    color: #fff;
-}
-
-.container-fluid {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 0%;
+    margin: 0%;
+    /* margin: 250; */
 }
 
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-style: solid;
-    border: 10;
-    border-color: #2e72a1;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
+    position: sticky;
+    /* border-style: solid; */
+    /* border-color: #2e72a1; */
+    background-color: #ffffff;
+    width: 100%;
+}
+.nav-div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+#logo {
+    margin-left: auto;
+    width: 25%;
+    max-width: 150px;
 }
 .nav-ul {
-    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 70%;
 }
 .nav-li {
-    padding: 1% 5%;
+    letter-spacing: 5px;
+    padding: 0% 5%;
     display: inline;
-    background-color: #b6b6b6;
-
 }
 .nav-link {
     font-size: 15px;
+    text-decoration: none;
 }
-.navbar-nav li a:hover {
+.nav-li a:hover {
     /* color: #2e72a1 !important; */
     color: #000000 !important;
+}
+
+/* .footer-div { */
+    /* display: flex; */
+    /* justify-content: center; */
+/* } */
+/* .footer-ul {
+    display: flex;
+    justify-content: center;
+} */
+.footer-link {
+    /* display: flex; */
+    padding: 5px;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #051b4e;
+    color: #ffffff;
+}
+/* ul {
+    list-style-type: none;
+    color: #ffffff;
+} */
+/* li > a{
+    text-decoration: none;
+} */
+
+a{
+    text-decoration: none;
 }
