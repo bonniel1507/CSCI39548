@@ -39,46 +39,32 @@ Add a logo and a navigation bar with links to: Home, Menu, About, and Contact pa
 Include a large banner image with the restaurant’s name displayed clearly.
 
 3. Menu Page 
-Create a structured menu using tables or cards to display food items and prices.
+Create a structured menu using tables or cards to display food items and prices. -->
 
--->
+    <div id="menu">
+        <table>
+            <tr>
+                <th>Dessert</th>
+                <th>Price</th>
+            </tr>
 
+            <tr>
+                <td>Cheese Cake</td>
+                <td>$3.99</td>
+            </tr>
 
-    <!-- Second Container -->
-    <div class="container-fluid bg-2 text-center" id="projects">
-        <h3 class="margin">Projects</h3>
-        <p>Coming soon!</p>
-        <div class="container">
-            <div class="row">
+            <tr>
+                <td>Sundae</td>
+                <td>$3.99</td>
+            </tr>
 
-                
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Copycat Website</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">10th Grade</h6>
-                            <p class="card-text">A copy of delta math website.</p>
-                            <a href="projects/copycat.html" class="card-link">More</a>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Adventure Project</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">10th Grade</h6>
-                            <p class="card-text">Choose your own adventure</p>
-                            <a href="projects/adventure-project.html" class="card-link">More</a>
-                        </div>
-                    </div>
-                </div> 
-
-            </div>
-        </div>
-        </a>
+            <tr>
+                <td>Pudding</td>
+                <td>$3.99</td>
+            </tr>
+        </table>
     </div>
+
 
     <!-- 4. Image Gallery 
     Show at least six pictures of food or the restaurant interior. The images in the gallery should be displayed as a slider.
@@ -86,38 +72,43 @@ Create a structured menu using tables or cards to display food items and prices.
     5. About Section
     Write a short story about the restaurant (e.g., history, special dishes, or mission). -->
     <div class="about_gallery" id="about">
-        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
         <div class="slideshow">
             <div class="slides fade">
-                <!-- <div class="numbertext">0 / 3</div> -->
-                <p class="slide-p">
+                <p id="about-p">
                     At Royal Tea House, our journey began with a simple but passionate dream: to create a place where every bite transports you to a world of joy and indulgence. Founded by a team of dessert enthusiasts.
                     <br>
                     Our mission is to craft unforgettable sweet experiences that bring smiles and create lasting memories. Our goal is to bring happiness to our community, turning everyday moments into sweet memories. We're more than a dessert shop — we're a place where smiles are served daily.
                 </p>
-                <!-- <img src="img1.jpg" style="width:100%"> -->
-                <!-- <div class="text">Caption Text</div> -->
             </div>
 
-            <!-- Full-width images with number and caption text -->
             <div class="slides fade">
                 <img src="img/img01.jpg" class="slide-img">
-                <p class="slide-p">text</p>
-                <!-- <div class="text">Caption Text</div> -->
+                <!-- <p class="slide-p">text</p> -->
             </div>
 
             <div class="slides fade">
-                <!-- <div class="numbertext">2 / 3</div> -->
                 <img src="img/img02.jpg" class="slide-img">
-                <p class="slide-p">text</p>
-                <!-- <div class="text">Caption Two</div> -->
+                <!-- <p class="slide-p">text</p> -->
             </div>
 
             <div class="slides fade">
-                <!-- <div class="numbertext">3 / 3</div> -->
-                <img src="img/img03.jpg" class="slide-img">
-                <p class="slide-p">text</p>
-                <!-- <div class="text">Caption Three</div> -->
+                <img src="img/img05.jpg" class="slide-img">
+                <!-- <p class="slide-p">text</p> -->
+            </div>
+
+            <div class="slides fade">
+                <img src="img/img06.jpg" class="slide-img">
+                <!-- <p class="slide-p">text</p> -->
+            </div>
+
+            <div class="slides fade">
+                <img src="img/img07.jpg" class="slide-img">
+                <!-- <p class="slide-p">text</p> -->
+            </div>
+            
+            <div class="slides fade">
+                <img src="img/img08.jpg" class="slide-img">
+                <!-- <p class="slide-p">text</p> -->
             </div>
         </div>
     
@@ -131,6 +122,7 @@ Create a structured menu using tables or cards to display food items and prices.
             <span class="dot" onclick="currentSlide(4)"></span>
             <span class="dot" onclick="currentSlide(5)"></span>
             <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </div>
