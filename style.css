@@ -13,24 +13,40 @@ body {
 }
 .nav-div {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
     align-content: center;
 }
+@media screen and (max-width: 650px) {
+    .nav-ul {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        height: 75px;
+    }
+    .nav-li {
+        width: 50%;
+        margin: auto;
+    }
+}
 #logo {
-    margin-left: auto;
-    width: 25%;
+    margin: auto;
+    /* width: 25%; */
     max-width: 150px;
 }
 .nav-ul {
+    display: flex;
+    justify-content: space-evenly;
     margin-top: auto;
     margin-bottom: auto;
     width: 70%;
+    /* border: 1px solid red; */
 }
 .nav-li {
     letter-spacing: 5px;
     padding: 0% 5%;
     display: inline;
+    /* border: 1px solid red; */
 }
 .nav-link {
     font-size: 15px;
@@ -41,7 +57,36 @@ body {
     color: #000000 !important;
 }
 
+#banner {
+    /* position: relative; */
+    background: url(img/tucson-tea-butterfly-pea-flower-tea-optimized.jpg) no-repeat center;
+    background-size: 100%;
+    width: 100%;
+    position: relative;
+}
+/* #banner-text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+} */
+    
+#banner-h1 {
+    color: #ffffff;
+    font-family: "Tangerine", Georgia, 'Times New Roman', Times;
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin: auto;
+    /* padding-top: 50%; */
+    line-height: 400px;
+    height: 400px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #051b4edd;
+    /* border: 1px solid red; */
+}
+
 table, th, td {
+    /* margin: 50px; */
     border: 1px solid;
 }
 
@@ -55,7 +100,8 @@ table {
     .table {
         /* min-width:none; */
         /* max-width: 50%; */
-        width: 500px;
+        /* width: 500px; */
+        table-layout: 3;
     }
 }
 /* -------------------------------------------------- */
@@ -261,5 +307,5 @@ textarea {
 }
 
 #menu, #about, #contact {
-    scroll-margin-top: 90px;
+    scroll-margin-top: 85px;
 }
