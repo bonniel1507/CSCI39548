@@ -9,7 +9,17 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Tangerine:wght@400;700&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<!---
+- Add Items to the Cart – When a user clicks on a food item in the menu, it should be added to their shopping cart.
+- View the Cart – The shopping cart should display the selected items, including their names, prices, and quantities.
+- Remove Items from the Cart – Users should be able to remove items from the shopping cart if they change their minds.
+
+Ensure that the cart dynamically updates as users add or remove items. You may use JavaScript, HTML, and CSS to implement this feature. Bonus points for adding a cart total price calculation and a clear cart option.
+-->
 
 <body>
 <!-- 1. Header & Navigation 
@@ -52,29 +62,69 @@ Include a large banner image with the restaurant’s name displayed clearly. -->
 <!-- 3. Menu Page 
 Create a structured menu using tables or cards to display food items and prices. -->
 
+<div style="background-color: aliceblue;">
     <div id="menu">
-        <table>
-            <tr>
-                <th>Dessert</th>
-                <th>Price</th>
+        <h2 style="text-align: center;">Menu</h2>
+
+        <button type="button" class="collapsible category">Cheese Cake</button>
+        <table class="content">
+            <tr id="Strawberry">
+                <td class="food">Strawberry</td>
+                <td class="price">3.99</td>
+                <td class="order"><button>Order</button></td>
             </tr>
 
-            <tr>
-                <td>Cheese Cake</td>
-                <td>$3.99</td>
+            <tr id="Blueberry">
+                <td class="food">Blueberry</td>
+                <td class="price">3.99</td>
+                <td class="order"><button>Order</button></td>
             </tr>
 
-            <tr>
-                <td>Sundae</td>
-                <td>$3.99</td>
+            <tr id="Chocolate">
+                <td class="food">Chocolate</td>
+                <td class="price">3.99</td>
+                <td class="order"><button>Order</button></td>
             </tr>
 
-            <tr>
-                <td>Pudding</td>
-                <td>$3.99</td>
+            <tr id="Caramel">
+                <td class="food">Caramel</td>
+                <td class="price">3.99</td>
+                <td class="order"><button>Order</button></td>
             </tr>
+
+        </table>
+
+        <button type="button" class="collapsible category">Crepes Cake</button>
+        <table class="content">
+            <tr id="Match">
+                <td class="food">Matcha</td>
+                <td class="price">3.99</td>
+                <td class="order"><button>Order</button></td>
+            </tr>
+
+            <tr id="Mango">
+                <td class="food">Mango</td>
+                <td class="price">3.99</td>
+                <td class="order"><button>Order</button></td>
+            </tr>
+
+            <tr id="Durain">
+                <td class="food">Durain</td>
+                <td class="price">3.99</td>
+                <td class="order"><button>Order</button></td>
+            </tr>
+
         </table>
     </div>
+
+
+    <div style="width: 700px; margin: auto;">
+            <h2 style="text-align: center;">Product Basket</h2>
+            <ul id="cart"></ul>
+            <div style="text-align: right;" id="total">Total Amount: $0</div>
+    </div>
+    
+</div>
 
 
     <!-- 4. Image Gallery 
