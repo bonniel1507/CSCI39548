@@ -87,6 +87,9 @@ body {
     vertical-align: middle;
     background-color: #051b4edd;
     /* border: 1px solid red; */
+    @media screen and (max-width: 700px) {
+        font-size: 40px;
+    }
 }
 
 /* -------------------------------------------------- */
@@ -101,6 +104,19 @@ body {
     /* margin-bottom: 20px; */
     /* background-color: powderblue; */
     /* border: 1px solid red; */
+    @media screen and (max-width: 700px) {
+        width: 100%;
+    }
+}
+
+.basket {
+    width: 700px;
+    margin: auto;
+    /* display: none; */
+    @media screen and (max-width: 700px) {
+        width: 95%;
+        margin: auto;
+    }
 }
 
 table {
@@ -112,13 +128,9 @@ table {
     table-layout: 3;
     /* margin: 50px; */
     /* border: 1px solid green; */
-}
-@media screen and (max-width: 700px) {
-    .table {
-        /* min-width:none; */
-        /* max-width: 50%; */
-        /* width: 500px; */
+    @media screen and (max-width: 700px) {
         table-layout: 3;
+
     }
 }
 

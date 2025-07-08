@@ -117,12 +117,62 @@ Create a structured menu using tables or cards to display food items and prices.
         </table>
     </div>
 
-
-    <div style="width: 700px; margin: auto;">
-            <h2 style="text-align: center;">Product Basket</h2>
-            <ul id="cart"></ul>
-            <div style="text-align: right;" id="total">Total Amount: $0</div>
+    <div id="basket">
+        <h2 style="text-align: center;">Product Basket</h2>
+        <ul id="cart"></ul>
+        <div style="text-align: right;" id="total">Total Amount: $0</div>
     </div>
+
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+
+    <script>
+        const { useState, useEffect } = React;
+
+        const Basket = () => {
+            const [smallScreen, setSmallScreen] = useState(false);
+
+            useEffect(() => {
+                const checkScreenSize = () => {
+                    setSmallScreen(window.innerWidth <= 700);
+                };
+
+                checkScreenSize();
+
+                window.addEventListener('resize', checkScreenSize);
+
+                return () => window.removeEventListener('resize', checkScreenSize);
+            }, []);
+
+
+            return (
+                <div style={{
+                    // width: '700px',
+                    margin: 'auto',
+                    /* display: none; */
+                    width: smallScreen ? '95%' : '700px',
+                    minHeight: '10px',
+                }}>
+                    
+                    <h2 style={{
+                        textAlign: 'center',
+                    }}>
+                        Product Basket
+                    </h2>
+
+                    <ul id="cart"></ul>
+
+                    <div style={{
+                        textAlign: 'right',
+                    }}>
+                        Total Amount: $0
+                    </div>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<Basket />, document.getElementById('basket'));
+    </script>
     
 </div>
 
@@ -268,6 +318,7 @@ Create a structured menu using tables or cards to display food items and prices.
 
     <script src="script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    
 </body>
 
 </html>
